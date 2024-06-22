@@ -1,0 +1,90 @@
+#SPD: add pnp2.0 porting KBBGHLESGQ-7880 by yuanjiong.gao 20191111 start
+on early-init
+    mkdir /dev/blkio
+    mount cgroup none /dev/blkio blkio
+    mkdir /dev/blkio/pnpmgr_topapp
+    mkdir /dev/blkio/pnpmgr_fg
+
+    chown system system /dev/blkio
+    chown system system /dev/blkio/pnpmgr_fg
+    chown system system /dev/blkio/pnpmgr_fg/cgroup.procs
+    chmod 0664 /dev/blkio/pnpmgr_fg/cgroup.procs
+#SPD: add pnp2.0 porting KBBGHLESGQ-7880 by yuanjiong.gao 20191111 end
+
+on init
+    chown root system /sys/power/pnpmgr/ams/activity
+    chmod 0664 /sys/power/pnpmgr/ams/activity
+    chown root system /sys/power/pnpmgr/ams/process
+    chmod 0664 /sys/power/pnpmgr/ams/process
+    chown root system /sys/power/pnpmgr/ams/process_list
+    chmod 0664 /sys/power/pnpmgr/ams/process_list
+    chown root system /sys/power/pnpmgr/ams/adj
+    chmod 0664 /sys/power/pnpmgr/ams/adj
+    chown root system /sys/power/pnpmgr/ams/foreground
+    chmod 0664 /sys/power/pnpmgr/ams/foreground
+    chown root system /sys/power/pnpmgr/ams/foreground_list
+    chmod 0664 /sys/power/pnpmgr/ams/foreground_list
+    chown root system /sys/power/pnpmgr/ams/ime
+    chmod 0664 /sys/power/pnpmgr/ams/ime
+    chown root system /sys/power/pnpmgr/ams/usage
+    chmod 0664 /sys/power/pnpmgr/ams/usage
+    chown root system /sys/power/pnpmgr/install
+    chmod 0664 /sys/power/pnpmgr/install
+    chown root system /sys/power/pnpmgr/mwn
+    chmod 0664 /sys/power/pnpmgr/mwn
+    chown root system /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+    chmod 0664 /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+    chown root system /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+    chmod 0664 /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+    chown root system /sys/module/lowmemorykiller/parameters/minfree
+    chmod 0664 /sys/module/lowmemorykiller/parameters/minfree
+    chown root system /sys/module/lowmemorykiller/parameters/adj
+    chmod 0664 /sys/module/lowmemorykiller/parameters/adj
+#SPD: add pnp2.0 porting KBBGHLESGQ-7880 by yuanjiong.gao 20191111 start
+    chown root system /sys/power/pnpmgr/io/wl
+    chmod 0664 /sys/power/pnpmgr/io/wl
+    chown root system /sys/power/pnpmgr/io/ctl_cg_weight
+    chmod 0664 /sys/power/pnpmgr/io/ctl_cg_weight
+    chown root system /sys/power/pnpmgr/io/ctl_iocfq
+    chmod 0664 /sys/power/pnpmgr/io/ctl_iocfq
+    chown root system /sys/power/pnpmgr/io/ctl_read_ahead
+    chmod 0664 /sys/power/pnpmgr/io/ctl_read_ahead
+    chown root system /sys/power/pnpmgr/io/ctl_wb_ratio
+    chmod 0664 /sys/power/pnpmgr/io/ctl_wb_ratio
+    chown root system /sys/power/pnpmgr/io/ctl_wbt
+    chmod 0664 /sys/power/pnpmgr/io/ctl_wbt
+    chown root system /sys/power/pnpmgr/io/throughput
+    chmod 0664 /sys/power/pnpmgr/io/throughput
+#SPD: add pnp2.0 porting KBBGHLESGQ-7880 by yuanjiong.gao 20191111 end
+
+#SPD: modify pnp2.0 porting KBBGHLESGQ-7880 by yuanjiong.gao 20191111 start
+    #mkdir /dev/blkio
+    #mount cgroup none /dev/blkio blkio
+    #mkdir /dev/blkio/pnpmgr_topapp
+    #mkdir /dev/blkio/pnpmgr_fg
+    #mkdir /dev/blkio/pnpmgr_bg
+#SPD: modify pnp2.0 porting KBBGHLESGQ-7880 by yuanjiong.gao 20191111 end
+#SPD: add pnp support cpuctl by xin.huang3 20200710 start
+    mkdir /dev/cpuctl/pnpmgr_bg
+    mkdir /dev/cpuctl/pnpmgr_fg
+#SPD: add pnp support cpuctl by xin.huang3 20200710 end
+
+
+    chmod 0550 /dev/cg2_bpf
+    mkdir /dev/cg2_bpf/pnpmgr_fg
+    mkdir /dev/cg2_bpf/pnpmgr_bg
+
+    write /proc/ppm/policy/ut_fix_core_num "4"
+    write /proc/ppm/policy/ut_fix_freq_idx "0"
+
+on property:sys.boot_completed=1
+    start pnpmgr
+    
+    write /proc/ppm/policy/ut_fix_core_num "-1"
+    write /proc/ppm/policy/ut_fix_freq_idx "-1"
+
+service pnpmgr /vendor/bin/pnpmgr
+    class core
+    user root
+    group root system
+    disabled

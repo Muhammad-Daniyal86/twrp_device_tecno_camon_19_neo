@@ -1,0 +1,15 @@
+#BSP:modify disable default startup CHJHBYY-965 by wang.qin 20210618 start
+service update_verifier_nonencrypted /system/bin/update_verifier nonencrypted
+    user root
+    group cache system
+    priority -20
+    ioprio rt 0
+    disabled
+
+service update_verifier /system/bin/update_verifier ${vold.decrypt}
+    user root
+    group cache system
+    priority -20
+    ioprio rt 0
+    disabled
+#BSP:modify disable default startup CHJHBYY-965 by wang.qin 20210618 end

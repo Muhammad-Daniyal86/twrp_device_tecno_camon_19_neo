@@ -1,0 +1,12 @@
+#on post-fs	
+#	start stucklogo
+
+on post-fs-data
+	mkdir /tranfs/stuck_logo/log 0755 root root
+
+service stucklogo /system/bin/stucklogo
+    class core
+    user root
+    group root
+    disabled
+    oneshot

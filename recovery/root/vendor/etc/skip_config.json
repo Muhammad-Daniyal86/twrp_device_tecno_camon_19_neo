@@ -1,0 +1,178 @@
+[
+  {
+    "name": "com.google.android.gms",
+    "broadcast": "2",
+    "jobservice": "0",
+    "alarm": "0",
+    "service": "0",
+    "network": "2"
+  },
+  {
+    "name": "com.google.android.apps.messaging",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "0",
+    "network": "0"
+  },
+  {
+    "name": "com.google.android.gm",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "0",
+    "network": "2"
+  },
+  {
+    "name": "com.google.android.googlequicksearchbox",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "0",
+    "network": "2"
+  },
+  {
+    "name": "com.android.chrome",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "1",
+    "network": "2"
+  },
+  {
+    "name": "com.bbm",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.tencent.mm",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.tencent.mobileqq",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.tencent.mobileqqi",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.qq.wpc",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.whatsapp",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.whatsapp.w4b",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.truecaller",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.viber.voip",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.skype.raider",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.twitter.android",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.instagram.android",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "mobile.lab.PhoneCallDetect",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.afmobigroup.gphone",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "org.telegram.messenger",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "com.yx",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  },
+  {
+    "name": "im.yixin",
+    "broadcast": "2",
+    "jobservice": "2",
+    "alarm": "2",
+    "service": "2",
+    "network": "0"
+  }
+]

@@ -1,0 +1,14 @@
+on init
+	chmod 0664 /dev/spidev0.0
+    chown system system /dev/spidev0.0
+	chmod 0664 /dev/silead_stub
+    chown system system /dev/silead_stub
+	chmod 0664 /dev/silead_fp
+    chown system system /dev/silead_fp
+    chmod 0666 /proc/ppm/enabled
+    chmod 0666 /proc/ppm/policy/ut_fix_core_num
+    chmod 0666 /proc/ppm/policy/ut_fix_freq_idx
+on post-fs-data
+    mkdir /data/vendor/silead
+    chmod 0777 /data/vendor/silead
+    chown system system /data/vendor/silead

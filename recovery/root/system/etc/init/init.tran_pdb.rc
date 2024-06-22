@@ -1,0 +1,9 @@
+on post-fs-data
+    start tran_pdb
+
+service tran_pdb /system/bin/tran_pdb
+    user root
+    group root
+    disabled
+    oneshot
+

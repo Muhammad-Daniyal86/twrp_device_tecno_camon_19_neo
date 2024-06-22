@@ -1,0 +1,8 @@
+on boot
+    insmod /vendor/lib/modules/tran_fre.ko
+
+on init
+    chown root system /sys/power/pnpmgr/fpsgo_boost/fbt/fre_db_cmd
+    chmod 0664 /sys/power/pnpmgr/fpsgo_boost/fbt/fre_db_cmd
+    chown root system /sys/power/pnpmgr/fpsgo_boost/fbt/fre_db_status
+    chmod 0664 /sys/power/pnpmgr/fpsgo_boost/fbt/fre_db_status

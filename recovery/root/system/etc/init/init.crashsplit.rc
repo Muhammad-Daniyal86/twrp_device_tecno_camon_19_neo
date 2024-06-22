@@ -1,0 +1,12 @@
+on post-fs-data
+mkdir /tranfs/crashsplit 0755 system system
+
+on property:persist.sys.crashsplit.hardware=1
+    stop crashsplit
+
+service crashsplit /system/bin/crashsplit
+    class core
+    user system
+    group system
+    oneshot
+

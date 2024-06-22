@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<!--
+    Package for thirdpart apk size & fpsrange
+    EvictedPackage for Evicted Camera, stillname > comingname
+-->
+
+<TranITDCamProfiles>
+<!--
+    Package
+        arg1: name:  app package name
+        arg2: supportedPreviewSizes: Supported preview sizes
+        arg3: supportedVideoSizes: Supported video sizes
+        arg4: supportedPictureSizes: Supported picture sizes
+        arg5: fpsRange: fps range
+-->
+        <!--Paytm-->
+        <Package name="net.one97.paytm"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+        <!--Alibaba.com-->
+        <Package name="com.alibaba.intl.android.apps.poseidon"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+        <!--[SPD] modify 20fps for CGQHLJQ-819 performance  by weizhong.sun 20201230 start-->
+        <!--line-->
+        <Package name="jp.naver.line.android"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange="5,20"
+            />
+        <!--[SPD] modify 20fps for CGQHLJQ-819  performance  by weizhong.sun 20201230 end-->
+        <!--twitter-->
+        <Package name="com.twitter.android"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+        <!--[ITD] modify for ACBHBWS-1175 by wei.miao 20210125 start-->
+        <!--OK-->
+        <Package name="ru.ok.android"
+            supportedPreviewSizes=""
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+        <!--[ITD] modify for ACBHBWS-1175 by wei.miao 20210125 end-->
+
+        <!--messaging-->
+        <Package name="com.google.android.apps.messaging"
+            supportedPreviewSizes=""
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange="5,20"
+            />
+        <!--[ITD] modify for wavepay preview size KFLHLEYJ-1967 by xuelong.chen 20210129 start-->
+        <!--wavepay-->
+        <Package name="mm.com.wavemoney.wavepay"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+        <!--[ITD] modify for wavepay preview size KFLHLEYJ-1967 by xuelong.chen 20210129 end-->
+        <!--[ITD] modify for CGCGJHRS-232 by desuo.lu 20210726 start-->
+        <!--cardfeed-->
+        <Package name="com.cardfeed.video_public"
+            supportedPreviewSizes=""
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+        <!--[ITD] modify for CGCGJHRS-232 by desuo.lu 20210726 end-->
+        <!--[ITD] modify for CGCGJHRS-6066 by desuo.lu 20210826 start-->
+        <!--cardfeed-->
+        <Package name="com.video.master"
+            supportedPreviewSizes=""
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+        <!--[ITD] modify for CGCGJHRS-6066 by desuo.lu 20210826 end-->
+        <!--[ITD] modify for CGCGJHRS-1850 by desuo.lu 20210803 start-->
+        <!--takatak-->
+        <Package name="com.next.innovation.takatak"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+        <!--[ITD] modify for CGCGJHRS-1850 by desuo.lu 20210803 end-->
+        <!--[ITD] modify for XLQYXLQS-1456 by desuo.lu 20211229 start-->
+        <!--instagram.lite-->
+        <Package name="com.instagram.lite"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+        <!--[ITD] modify for XLQYXLQS-1456 by desuo.lu 20211229 end-->
+        <!--[ITD] modify for XLWYEHLYEL-159 by zhoumw 20220105 start-->
+        <!--com.pinterest-->
+        <Package name="com.pinterest"
+            supportedPreviewSizes=""
+            supportedVideoSizes=""
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+        <!--[ITD] modify for XLWYEHLYEL-159 by zhoumw 20220105 start-->
+<!--
+    EvictedPackage
+        arg1: comingname:  current app package name
+        arg2: stillname:  still alive app package name
+-->
+        <!--[ITD] modify for LCQHLYYLR-2079 by zhoumw 20200827 start-->
+        <EvictedPackage comingname="com.transsion.scanningrecharger" stillname="com.tencent.mm"/>
+        <!--[ITD] modify for LCQHLYYLR-2079 by zhoumw 20200827 end-->
+
+</TranITDCamProfiles>

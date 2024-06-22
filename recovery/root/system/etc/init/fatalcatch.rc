@@ -1,0 +1,2 @@
+on property:vendor.debug.mtk.aeev.db=* && property:persist.sys.crashsplit.hardware=0
+exec /system/bin/fatalcatch

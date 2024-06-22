@@ -1,0 +1,15 @@
+service hwservicemanager /system/bin/hwservicemanager
+    user system
+    disabled
+    group system readproc
+    critical
+    onrestart setprop hwservicemanager.ready false
+    onrestart class_restart main
+    onrestart class_restart hal
+    onrestart class_restart early_hal
+    task_profiles ServiceCapacityLow HighPerformance
+#SPD: add pnp2.0 porting KBBGHLESGQ-7880 by yuanjiong.gao 20191111 start
+    writepid /dev/blkio/pnpmgr_fg/cgroup.procs
+#SPD: add pnp2.0 porting KBBGHLESGQ-7880 by yuanjiong.gao 20191111 end
+    class animation
+    shutdown critical

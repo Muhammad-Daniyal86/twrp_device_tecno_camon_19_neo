@@ -1,0 +1,118 @@
+[
+  {
+    "name": "com.transsion.phonemaster",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.transsion.phoenix",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.transsion.alarmmanager",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.oraimo.appjoywear",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.domobile.applock",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.fooview.android.fooview.transsion",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.transsion.testcaserepository",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.transsion.agingfunction",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.transsion.emmctest",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "jp.co.cyberagent.stf",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.afwsamples.testdpc",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.transsion.demomode",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.transsion.tsdsmartcomm",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.example.jintest",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.android.showae",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.transsion.plat.appupdate",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.transsion.plat.policycenter",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.hanvon.xpen",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.android.facelock",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.whatsapp",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.google.android.gms",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.google.android.cellbroadcastreceiver",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.google.android.gm",
+    "skip_sometime": "false"
+  },
+  {
+    "name": "com.facebook.katana",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.facebook.orca",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.facebook.lite",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.facebook.mlite",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.example.mtk10263.whatsTemp",
+    "skip_sometime": "true"
+  },
+  {
+    "name": "com.android.vending",
+    "skip_sometime": "true"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "framework_skip": "false",
+  "cache_process": "false",
+  "activity_scene": "true",
+  "scene_list": [
+    {
+      "name": "com.instagram.android",
+      "scene": "all"
+    },
+    {
+      "name": "com.google.android.youtube",
+      "scene": "all"
+    },
+    {
+      "name": "com.whatsapp",
+      "scene": "all"
+    }
+  ]
+}

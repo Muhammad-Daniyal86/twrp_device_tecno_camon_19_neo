@@ -1,0 +1,4 @@
+on init
+    chown system system /sys/power/pnpmgr/ams/enable_record
+    chmod 0664 /sys/power/pnpmgr/ams/enable_record
+    setprop ro.vendor.pnpmgr.game.record enable

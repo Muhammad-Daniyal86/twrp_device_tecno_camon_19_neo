@@ -1,0 +1,5 @@
+on init
+    chmod 0766 /dev/freezenet
+#    chown system system /dev/freezenet
+    chown system system /dev/freezer/tasks
+    chmod 0664 /dev/freezer/tasks

@@ -1,0 +1,4 @@
+on init
+    chown root system /sys/power/pnpmgr/ams/mode_ctl
+    chmod 0664 /sys/power/pnpmgr/ams/mode_ctl
+    setprop ro.vendor.pnpmgr.game.ctl enable

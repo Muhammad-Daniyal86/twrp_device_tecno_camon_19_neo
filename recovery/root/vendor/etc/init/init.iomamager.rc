@@ -1,0 +1,32 @@
+on init
+    chown root system /proc/sys/vm/dirty_background_ratio
+    chmod 0664 /proc/sys/vm/dirty_background_ratio
+    chown root system /proc/sys/vm/dirty_ratio
+    chmod 0664 /proc/sys/vm/dirty_ratio
+    chown root system /proc/blocktag/mmc/blockio_pipe
+    chmod 0664 /proc/blocktag/mmc/blockio_pipe
+    chown root system /sys/module/filemap/parameters/set_pid
+    chmod 0664 /sys/module/filemap/parameters/set_pid
+    chown root system /sys/module/page_writeback/parameters/vm_dirty_ratio
+    chmod 0664 /sys/module/page_writeback/parameters/vm_dirty_ratio
+    chown root system /sys/module/page_writeback/parameters/dirty_background_ratio
+    chmod 0664 /sys/module/page_writeback/parameters/dirty_background_ratio
+    chown root system /proc/iomanager/activity
+    chmod 0664 /proc/iomanager/activity
+
+#SPD: add XLBYJHL-2590 by deyong.gan for readIO limit at 20220228 start    
+	chown root system /proc/iomanager/procs_pid
+    chmod 0664 /proc/iomanager/procs_pid
+#SPD: add XLBYJHL-2590 by deyong.gan for readIO limit at 20220228 end
+
+    mkdir /dev/cg2_bpf/iomanager_max
+    mkdir /dev/blkio/iomanager
+
+on property:sys.boot_completed=1
+    start iomanager
+
+service iomanager /vendor/bin/iomanager
+    class core
+    user root
+    group root system
+    disabled
